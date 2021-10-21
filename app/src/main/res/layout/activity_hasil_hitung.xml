@@ -7,104 +7,120 @@
     tools:context=".HasilHitung">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/namaBidang"
-        android:layout_width="300dp"
-        android:layout_height="37dp"
+        android:id="@+id/cardView"
+        android:layout_width="265dp"
+        android:layout_height="46dp"
         app:cardCornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" >
+        app:layout_constraintVertical_bias="0.076">
 
         <TextView
             android:id="@+id/teksBidang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:background="@drawable/gradient_judul"
             android:gravity="center"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textColorLink="#00BCD4"
+            android:textSize="34sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/wadahLuas"
-        android:layout_width="102dp"
-        android:layout_height="25dp"
-        app:cardBackgroundColor="#673AB7"
+        android:layout_width="87dp"
+        android:layout_height="32dp"
         app:cardCornerRadius="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177">
+        app:layout_constraintVertical_bias="0.179">
 
         <TextView
             android:id="@+id/Luas"
-            android:layout_width="102dp"
-            android:layout_height="match_parent"
-            android:text="Luas bidang :" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/gradient"
+            android:gravity="center|center_vertical"
+            android:text="Luas :"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/angkaLuas"
-        android:layout_width="165dp"
-        android:layout_height="23dp"
-        app:cardBackgroundColor="#673AB7"
-        app:cardCornerRadius="6dp"
+        android:id="@+id/cardAngkaLuas"
+        android:layout_width="191dp"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.734"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176">
+        app:layout_constraintVertical_bias="0.18">
 
         <TextView
-            android:id="@+id/textLuas"
+            android:id="@+id/textLuasAngka"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/wadahKeliling"
-        android:layout_width="102dp"
-        android:layout_height="25dp"
-        app:cardBackgroundColor="#673AB7"
+        android:layout_width="106dp"
+        android:layout_height="35dp"
         app:cardCornerRadius="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.163"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23">
+        app:layout_constraintVertical_bias="0.246">
 
         <TextView
-            android:id="@+id/textKeliling"
+            android:id="@+id/Keliling"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Keliling bidang :" />
+            android:background="@drawable/gradient"
+            android:gravity="center"
+            android:text="Keliling :"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="7dp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/angkaKeliling"
-        android:layout_width="164dp"
-        android:layout_height="24dp"
-        app:cardBackgroundColor="#673AB7"
-        app:cardCornerRadius="6dp"
+        android:id="@+id/cardAngkaKeliling"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23">
+        app:layout_constraintVertical_bias="0.245">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textKelilingAngka"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

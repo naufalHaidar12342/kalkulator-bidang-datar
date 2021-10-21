@@ -4,4 +4,8 @@
     <string name="sisi_pertama">sisi_pertama</string>
     <string name="masukkan_sisi_kedua">Masukkan sisi kedua (cm)</string>
     <string name="kalkulator_2d">Kalkulator 2D</string>
+    <string name="satuan_luas">cm^2</string>
+    <string name="label_Lingkaran">Lingkaran</string>
+    <string name="label_Persegi">Persegi</string>
+    <string name="label_Segitiga">Segitiga</string>
 </resources>

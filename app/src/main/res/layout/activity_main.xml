@@ -49,99 +49,96 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/sisi1Card"
-                android:layout_width="331dp"
-                android:layout_height="55dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="116dp"
-                android:layout_marginEnd="16dp"
+                android:id="@+id/cardSisi1"
+                android:layout_width="286dp"
+                android:layout_height="56dp"
                 app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.486"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.316">
 
                 <EditText
                     android:id="@+id/inputSisi1"
-                    android:layout_width="289dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:ems="10"
+                    android:gravity="center"
                     android:hint="@string/masukkan_sisi_pertama"
+
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:minHeight="48dp" />
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/sisi2Card"
-                android:layout_width="331dp"
-                android:layout_height="54dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="192dp"
-                android:layout_marginRight="16dp"
+                android:id="@+id/cardSisi2"
+                android:layout_width="286dp"
+                android:layout_height="56dp"
                 app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.421"
+                app:layout_constraintHorizontal_bias="0.487"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.498">
 
                 <EditText
                     android:id="@+id/inputSisi2"
-                    android:layout_width="288dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="6dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:ems="10"
+                    android:gravity="center"
                     android:hint="@string/masukkan_sisi_kedua"
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:minHeight="48dp" />
-
             </androidx.cardview.widget.CardView>
 
             <Button
                 android:id="@+id/buttonSegitiga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Segitiga"
+                android:text="@string/label_Segitiga"
                 app:cornerRadius="12dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.212"
+                app:layout_constraintHorizontal_bias="0.231"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.682" />
+                app:layout_constraintVertical_bias="0.689" />
 
             <Button
                 android:id="@+id/buttonLingkaran"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lingkaran"
+                android:text="@string/label_Lingkaran"
                 app:cornerRadius="12dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.452"
+                app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.819" />
+                app:layout_constraintVertical_bias="0.848" />
 
             <Button
                 android:id="@+id/buttonPersegi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Persegi"
+                android:text="@string/label_Persegi"
                 app:cornerRadius="12dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.687"
+                app:layout_constraintHorizontal_bias="0.769"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.682" />
+                app:layout_constraintVertical_bias="0.689" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
