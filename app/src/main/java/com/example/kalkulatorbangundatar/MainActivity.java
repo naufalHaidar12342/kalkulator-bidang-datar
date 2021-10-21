@@ -34,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
                 segitiga();
             }
         });
+
+        //
+        persegiBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                persegi();
+            }
+        });
     }
 
     public void segitiga(){
@@ -78,6 +86,34 @@ public class MainActivity extends AppCompatActivity {
         inputSisi2.setText("");
 
 
+
+    }
+
+    public void persegi(){
+        //rumus
+        String rumusLuas =" Luas persegi = sisi x sisi";
+        String rumusKeliling="Keliling persegi = 2 x (panjang + lebar)";
+
+        //mengambil angka dari EditText dan diubah ke tipe double/pecahan
+        double hitungSisi= Double.parseDouble(String.valueOf(inputSisi1.getText()));
+
+
+
+        //menghitung luas dan keliling
+        double luas=hitungSisi*hitungSisi;
+
+        double keliling=hitungSisi*4;
+
+
+        //
+        Intent intent=new Intent(MainActivity.this,HasilHitung.class);
+        intent.putExtra("nama_bidang","Persegi");
+        intent.putExtra("hasil_luas", luas +" cm^2");
+        intent.putExtra("hasil_keliling", keliling +" cm");
+        startActivity(intent);
+
+        inputSisi1.setText("");
+        inputSisi2.setText("");
 
     }
 }
