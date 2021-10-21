@@ -5,26 +5,39 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText inputSisi1,inputSisi2;
     TextView namaBidangDatar;
-
+    Button triangleBtn,persegiBtn,lingkaranBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    public void segitiga(View view){
-        /*Segitiga siku-siku*/
 
         //menyambungkan id komponen pada xml dengan logic di java
         inputSisi1=findViewById(R.id.inputSisi1);
         inputSisi2=findViewById(R.id.inputSisi2);
-        namaBidangDatar=findViewById(R.id.namaBidang);
+        triangleBtn=findViewById(R.id.buttonSegitiga);
+        persegiBtn=findViewById(R.id.buttonPersegi);
+        lingkaranBtn=findViewById(R.id.buttonLingkaran);
+
+
+        //ketika klik tombol segitiga, memanggil fungsi segitiga()
+        //dengan setOnClickListener bawaan class Button
+        triangleBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                segitiga();
+            }
+        });
+    }
+
+    public void segitiga(){
+        /*Segitiga siku-siku*/
 
         //rumus
         String rumusLuas =" Luas segitiga = (1/2) x alas x tinggi";
@@ -57,9 +70,12 @@ public class MainActivity extends AppCompatActivity {
         //
         Intent intent=new Intent(MainActivity.this,HasilHitung.class);
         intent.putExtra("nama_bidang","Segitiga");
-        intent.putExtra("hasil_luas",luas);
-        intent.putExtra("hasil_keliling",keliling);
+        intent.putExtra("hasil_luas", luas +" cm^2");
+        intent.putExtra("hasil_keliling", keliling +" cm");
+        startActivity(intent);
 
+        inputSisi1.setText("");
+        inputSisi2.setText("");
 
 
 
