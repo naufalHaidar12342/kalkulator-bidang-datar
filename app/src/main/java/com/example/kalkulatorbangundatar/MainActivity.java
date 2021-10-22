@@ -42,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
                 persegi();
             }
         });
+
+        //
+        lingkaranBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lingkaran();
+            }
+        });
     }
 
     public void segitiga(){
@@ -115,5 +123,32 @@ public class MainActivity extends AppCompatActivity {
         inputSisi1.setText("");
         inputSisi2.setText("");
 
+    }
+
+    public void lingkaran(){
+        //rumus
+        String rumusLuas =" Luas lingkaran = pi x jari-jari x jari-jari";
+        String rumusKeliling="Keliling persegi = 2 x pi x jari-jari";
+
+        //mengambil angka dari EditText dan diubah ke tipe double/pecahan
+        double hitungJariJari= Double.parseDouble(String.valueOf(inputSisi1.getText()));
+
+
+
+        //menghitung luas dan keliling
+        double luas=3.14*hitungJariJari*hitungJariJari;
+
+        double keliling=2*3.14*hitungJariJari;
+
+
+        //
+        Intent intent=new Intent(MainActivity.this,HasilHitung.class);
+        intent.putExtra("nama_bidang","Lingkaran");
+        intent.putExtra("hasil_luas", luas +" cm^2");
+        intent.putExtra("hasil_keliling", keliling +" cm");
+        startActivity(intent);
+
+        inputSisi1.setText("");
+        inputSisi2.setText("");
     }
 }
