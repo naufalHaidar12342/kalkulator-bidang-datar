@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
         /*Segitiga siku-siku*/
 
         //rumus
-        String rumusLuas =" Luas segitiga = (1/2) x alas x tinggi";
-        String rumusKeliling="Keliling segitiga = sisi1 + sisi2 + sisi3";
+        String rumusLuas ="(1/2) x alas x tinggi";
+        String rumusKeliling="sisi1 + sisi2 + sisi3";
         
         //mengambil angka dari EditText dan diubah ke tipe double/pecahan
         double hitungAlas= Double.parseDouble(String.valueOf(inputSisi1.getText()));
@@ -86,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
         //
         Intent intent=new Intent(MainActivity.this,HasilHitung.class);
         intent.putExtra("nama_bidang","Segitiga");
+        intent.putExtra("rumus_luas",rumusLuas);
+        intent.putExtra("rumus_keliling",rumusKeliling);
         intent.putExtra("hasil_luas", luas +" cm^2");
         intent.putExtra("hasil_keliling", keliling +" cm");
         startActivity(intent);
@@ -99,8 +101,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void persegi(){
         //rumus
-        String rumusLuas =" Luas persegi = sisi x sisi";
-        String rumusKeliling="Keliling persegi = 2 x (panjang + lebar)";
+        String rumusLuas =" sisi x sisi";
+        String rumusKeliling="sisi x 4";
 
         //mengambil angka dari EditText dan diubah ke tipe double/pecahan
         double hitungSisi= Double.parseDouble(String.valueOf(inputSisi1.getText()));
@@ -116,6 +118,8 @@ public class MainActivity extends AppCompatActivity {
         //
         Intent intent=new Intent(MainActivity.this,HasilHitung.class);
         intent.putExtra("nama_bidang","Persegi");
+        intent.putExtra("rumus_luas",rumusLuas);
+        intent.putExtra("rumus_keliling",rumusKeliling);
         intent.putExtra("hasil_luas", luas +" cm^2");
         intent.putExtra("hasil_keliling", keliling +" cm");
         startActivity(intent);
@@ -127,8 +131,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void lingkaran(){
         //rumus
-        String rumusLuas =" Luas lingkaran = pi x jari-jari x jari-jari";
-        String rumusKeliling="Keliling persegi = 2 x pi x jari-jari";
+        String rumusLuas ="pi (3,14) x jari-jari x jari-jari";
+        String rumusKeliling="2 x pi x jari-jari";
 
         //mengambil angka dari EditText dan diubah ke tipe double/pecahan
         double hitungJariJari= Double.parseDouble(String.valueOf(inputSisi1.getText()));
@@ -144,6 +148,8 @@ public class MainActivity extends AppCompatActivity {
         //
         Intent intent=new Intent(MainActivity.this,HasilHitung.class);
         intent.putExtra("nama_bidang","Lingkaran");
+        intent.putExtra("rumus_luas",rumusLuas);
+        intent.putExtra("rumus_keliling",rumusKeliling);
         intent.putExtra("hasil_luas", luas +" cm^2");
         intent.putExtra("hasil_keliling", keliling +" cm");
         startActivity(intent);

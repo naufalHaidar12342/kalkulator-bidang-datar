@@ -32,81 +32,83 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardHasil"
-        android:layout_width="303dp"
-        android:layout_height="346dp"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/gradient"
         app:cardCornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.438">
+        app:layout_constraintVertical_bias="0.251">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="303dp"
-            android:layout_height="345dp"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
             android:background="@drawable/gradient">
 
             <TextView
                 android:id="@+id/textLuasAngka"
                 android:layout_width="wrap_content"
-                android:layout_height="33dp"
+                android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:text="TextView"
                 android:textColor="@color/white"
-                android:textSize="24sp"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.183"
+                app:layout_constraintHorizontal_bias="0.096"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.179" />
+                app:layout_constraintVertical_bias="0.162" />
 
             <TextView
                 android:id="@+id/textKelilingAngka"
                 android:layout_width="wrap_content"
-                android:layout_height="34dp"
+                android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:text="TextView"
                 android:textColor="@color/white"
-                android:textSize="24sp"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.251"
+                app:layout_constraintHorizontal_bias="0.146"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.498" />
+                app:layout_constraintVertical_bias="0.399" />
 
             <TextView
                 android:id="@+id/Luas"
-                android:layout_width="58dp"
-                android:layout_height="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center_vertical"
                 android:text="Luas "
                 android:textColor="@color/white"
-                android:textSize="24sp"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.066"
+                app:layout_constraintHorizontal_bias="0.081"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.078" />
+                app:layout_constraintVertical_bias="0.065" />
 
             <TextView
                 android:id="@+id/Keliling"
-                android:layout_width="79dp"
-                android:layout_height="33dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:text="Keliling "
                 android:textColor="@color/white"
-                android:textSize="24sp"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.071"
+                app:layout_constraintHorizontal_bias="0.088"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.387" />
+                app:layout_constraintVertical_bias="0.302" />
 
             <TextView
                 android:id="@+id/semicolon1"
@@ -114,26 +116,83 @@
                 android:layout_height="wrap_content"
                 android:text=":"
                 android:textColor="@color/white"
-                android:textSize="24sp"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.393"
+                app:layout_constraintHorizontal_bias="0.345"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.076" />
+                app:layout_constraintVertical_bias="0.074" />
 
             <TextView
                 android:id="@+id/semicolon2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="120dp"
                 android:text=":"
                 android:textColor="@color/white"
-                android:textSize="24sp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.393"
+                app:layout_constraintHorizontal_bias="0.342"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.302" />
+
+            <TextView
+                android:id="@+id/labelRumusLuas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rumus Luas"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.547" />
+
+            <TextView
+                android:id="@+id/isiRumusLuas"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.136"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.65" />
+
+            <TextView
+                android:id="@+id/labelRumusKeliling"
+                android:layout_width="149dp"
+                android:layout_height="30dp"
+                android:text="Rumus Keliling"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.107"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.827" />
+
+            <TextView
+                android:id="@+id/isiRumusKeliling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.131"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.929" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
