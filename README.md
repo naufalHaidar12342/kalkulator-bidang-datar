@@ -6,21 +6,18 @@ Aplikasi sederhana untuk menghitung luas dan keliling bangun datar.
 - [Spesifikasi](#app-specs)
 - [Demo](#app-demo)
 
-
 <div id="requirements"></div>
 
 ## Menjalankan Aplikasi
 
-1. Buka Android Studio, lalu pada tab ```File```, pilih ```Open...```. Tunggu Android Studio membuka file project.
-2. Klik tombol *Play* warna hijau
+1. Buka Android Studio, lalu pada tab `File`, pilih `Open...`. Tunggu Android Studio membuka file project.
+2. Klik tombol _Play_ warna hijau
 
 > Lihat [persyaratan](REQUIREMENTS.md) untuk mengetahui kebutuhan sebelum menjalankan aplikasi.
 
-
-
 <div id="app-specs"></div>
 
-##  Spesifikasi Aplikasi
+## Spesifikasi Aplikasi
 
 Aplikasi ini dapat menghitung luas dan keliling dari 3 bangun datar, yaitu persegi, lingkaran, dan segitiga.
 
@@ -43,10 +40,11 @@ dependencies {
 ```
 
 - Android Virtual Device (AVD)
-> Google Pixel 2 API 27 (Android Oreo)
+
+  > Google Pixel 2 API 27 (Android Oreo)
 
 - Java Development Kit
->OpenJDK 17
+  > OpenJDK 17
 
 <div id="app-demo"></div>
 
