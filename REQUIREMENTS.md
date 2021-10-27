@@ -11,10 +11,6 @@ Berikut beberapa _tools_ yang dibutuhkan sebelum menjalankan aplikasi ini.
    >
    > > OpenJDK juga bisa didapatkan dari snap
 
-<iframe src="https://snapcraft.io/android-studio/embedded?button=black&summary=true" frameborder="0" width="100%" height="310px" style="border: 1px solid #CCC; border-radius: 2px;"></iframe>
-
-<iframe src="https://snapcraft.io/openjdk/embedded?button=black&summary=true" frameborder="0" width="100%" height="320px" style="border: 1px solid #CCC; border-radius: 2px;"></iframe>
-
 ## Tambahan
 
 Jika ingin melakukan _download_ aplikasi melalui `git clone`, diharuskan untuk memasang _Git_ dulu.
